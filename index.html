@@ -10,24 +10,31 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- css file to media query -->
     <link rel="stylesheet" href="css/queries.css">
-    <!-- js file -->
+    <!----------- main js file ----------->
     <script defer src="js/script.js"></script>
+
+    <!-- -----for support smooth navigation on safari------- -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    
     <title>OMMNIFOOD</title>
 </head>
 
-<header class="openNav">
-    <a href="http://">
-        <img src="img/omnifood-logo.png" class="logo" alt="food logo"/>
+<header class="main-header">
+    
+    <a href="#" >
+        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+     </a>
 
-    </a>
-
-  
+    
 
 
     <nav class="main-nav  ">
         <ul class="main-nav-list">
             <li>
-                <a href="#how-it-work" class="main-nav-link">How it works</a>
+                <a href="#how-it-work" class="main-nav-link link">How it works</a>
             </li>
             <li>
                 <a href="#meals" class="main-nav-link">Meals</a>
@@ -66,8 +73,8 @@
             Tailored to your personal tastes and nutritional needs.
            </p>
            <div class="main-links">
-            <a href="http://" class="btn btn-colored">Start eating well</a>
-            <a href="http://" class="btn btn-trans">Learn more &darr;</a>
+            <a href="#contact" class="btn btn-colored">Start eating well</a>
+            <a href="#testimonials" class="btn btn-trans">Learn more &darr;</a>
         </div>
 
         <div class="delivered-meals">
@@ -491,7 +498,7 @@
                         </form>
                     </div>
                     <div class="contact-img" >
-                        <!-- <img src="img/eating.jpg" alt="" srcset=""> -->
+                       
                     </div>
                 </div>
             </div>
@@ -508,7 +515,7 @@
                     <div class="container">
                             <div class="footer-content">
                                 <div class="logos-col">
-                                    <a href=""><img src="img/omnifood-logo.png" alt="logo"></a>
+                                    <a href="#" ><img src="img/omnifood-logo.png" alt="logo"></a>
                                     <div class="social">
                                         <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
                                         <ion-icon class="social-icon" name="logo-facebook"></ion-icon>

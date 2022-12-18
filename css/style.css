@@ -19,17 +19,22 @@
 }
 
 
-body {
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    /* color: #555; */
+/* **********start variabe************* */
+
+:root {
+    --bgColor : #fdf2e9;
+    --btn-color :#e67e22;
+    --fontColor :rgb(105, 105, 105);
 }
-html {
-    scroll-behavior: smooth;
+
+/* **********end variabe************* */
+
+
+
+
+
+body {
+    overflow-x: hidden;
 }
 
 a {
@@ -100,20 +105,6 @@ ul {
 
 
 
-/* **********start variabe************* */
-
-:root {
-    --bgColor : #fdf2e9;
-    --btn-color :#e67e22;
-    --fontColor :rgb(105, 105, 105);
-}
-
-/* **********end variabe************* */
-
-
-
-
-
 /* ********************************************************* */
 /********* start header ***************************/
 
@@ -170,7 +161,7 @@ li a.ptc:hover {
     border: none;
     cursor: pointer;
     display: none;
-    /* align-self: flex-end; */
+   
 }
 
 .icon-mobile-nav {

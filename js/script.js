@@ -1,14 +1,56 @@
 
 
-// select navBtn for mobile navBar
+//------------- navBar for mobile -------------------------------------
 
+const navBtn= document.querySelector(".mobile-nav-btn")
+const mainHeader = document.querySelector(".main-header");
 
-let navBtn = document.querySelector(".bars");
-
-let mainNav = document.querySelector(".main-nav");
-console.log(mainNav)
 
 navBtn.addEventListener("click" , function() {
-    console.log("jj")
-    mainNav.classList.toggle(".openNav")
+    mainHeader.classList.toggle("openNav");
+});
+
+//------------------------------------------------------------------------ 
+//------------------------------------------------------------------------- 
+
+
+
+
+
+// --------------- for smooth scroll -----------------------------------
+
+const allLinks = document.querySelectorAll("a");
+console.log(allLinks)
+
+allLinks.forEach(function(link){
+
+    link.addEventListener('click' , function(e) {
+        e.preventDefault();
+    
+        // console.log(e.target)
+        
+        const href  = link.getAttribute("href");
+        console.log(href)
+        
+        
+
+        if(href === '#') {
+            window.scrollTo({
+                top:0,
+                behavior:'smooth',
+
+            });
+        }
+
+
+        if(href !== '#' && href.startsWith("#")) {
+        
+            const section = document.querySelector(href);
+            section.scrollIntoView({behavior : 'smooth'})
+        }
+    })
 })
+
+
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
