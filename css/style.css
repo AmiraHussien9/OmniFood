@@ -31,10 +31,6 @@
 
 
 
-
-
-body {
-    overflow: hidden;
 }
 
 a {
@@ -120,6 +116,7 @@ header{
     padding: 3rem;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .logo {
