@@ -28,7 +28,9 @@
 }
 
 /* **********end variabe************* */
-
+html {
+    overflow-x: hidden !important;
+}
 body {
     overflow: hidden !important;
 }
