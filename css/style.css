@@ -29,7 +29,9 @@
 
 /* **********end variabe************* */
 
-
+body {
+    overflow: hidden !important;
+}
 
 
 a {
@@ -103,8 +105,7 @@ ul {
 /* ********************************************************* */
 /********* start header ***************************/
 
-
-header{
+.main-header{
     display: flex;
     flex-direction: row !important;
     justify-content: space-between;
@@ -115,7 +116,7 @@ header{
     padding: 3rem;
     position: relative;
     width: 100%;
-    overflow: hidden;
+    /* overflow-x: hidden !important; */
 }
 
 .logo {

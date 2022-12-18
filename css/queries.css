@@ -149,6 +149,7 @@
 
 
 @media(max-width:992px) {
+   
     .main-nav {
         background-color: #fff;
         width: 100%;
@@ -399,7 +400,7 @@
         grid-template-columns: 1fr;
     }
     .contact-form {
-        padding: 3rem;
+        padding: 2rem;
     }
     .contact-img {
         height: 20rem;
