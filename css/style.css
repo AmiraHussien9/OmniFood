@@ -97,7 +97,15 @@ ul {
     color: #333;
 }
 
- .sticky .main-header{
+
+/* ************ end global component************* */
+/* ************************************************** */
+
+
+
+/* -------------------sticky navBar by scroll----------------------- */
+/* ---------------------------------------------------------------- */
+.sticky .main-header{
 
     position: fixed !important;
     top: 0;
@@ -112,13 +120,30 @@ ul {
     transition: all .3s;
 }
 
-/* ************ end global component************* */
-/* ************************************************** */
-
-
 body {
     transition: all .3s;
 }
+
+
+/* *********scroll-to-top ***********/
+/* ------------------------------------ */
+.scroll-to-top {
+    position: fixed;
+    display: block;
+    padding: .8rem;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color:var(--btn-color);
+    color: #fdf2e9;
+    left:95%;
+    bottom: 20px;
+    z-index: 999999999;
+    opacity: 0;
+    transition: .3s;
+}
+
+
+
 
 
 /* ********************************************************* */
@@ -964,12 +989,6 @@ h3.how-text-title {
         .price-btn a {
             font-size: .8rem !important;
         }
-
-
-
-
-
-
 
 
 

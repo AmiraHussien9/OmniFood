@@ -18,6 +18,8 @@ navBtn.addEventListener("click" , function() {
 
 
 // --------------- for smooth scroll -----------------------------------
+let scrollTopIcon = document.querySelector(".scroll-to-top");
+console.log(scrollTopIcon)
 
 const allLinks = document.querySelectorAll("a");
 console.log(allLinks)
@@ -46,7 +48,12 @@ allLinks.forEach(function(link){
         if(href !== '#' && href.startsWith("#")) {
         
             const section = document.querySelector(href);
-            section.scrollIntoView({behavior : 'smooth'})
+            section.scrollIntoView({behavior : 'smooth'});
+
+
+            // ----------------
+            mainHeader.classList.remove("openNav");
+            
         }
     })
 })
@@ -70,24 +77,25 @@ allLinks.forEach(function(link){
 let homeSection = document.querySelector(".main-hero");
 console.log(homeSection);
 
+
+
 let sectionObserve = new IntersectionObserver(function(entries) {
     console.log(entries[0])
         if(entries[0].isIntersecting === false) {
-            document.body.classList.add("sticky")
+            document.body.classList.add("sticky");
+            scrollTopIcon.style = "opacity:1";
         }
         
         if(entries[0].isIntersecting ) {
             document.body.classList.remove("sticky");
+            scrollTopIcon.style = "opacity:0";
             
         }
-        // if(entries[0].boundingClientRect.width <= 500) {
-        //     console.log("i cannn");
-        //     document.body.classList.remove("sticky");
-        // }
+       
         console.log(entries[0].boundingClientRect.width)
 
-     
-        // document.body.classList.toggle("sticky" , !entries[0].isIntersecting)
+
+
 
 } , {
     root:null,
@@ -100,6 +108,9 @@ let sectionObserve = new IntersectionObserver(function(entries) {
 
 sectionObserve.observe(homeSection);
 
+
+// --------------------------------------------------
+// --------------- scroll to top icon ---------------
 
 
 
