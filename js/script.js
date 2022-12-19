@@ -75,10 +75,18 @@ let sectionObserve = new IntersectionObserver(function(entries) {
         if(entries[0].isIntersecting === false) {
             document.body.classList.add("sticky")
         }
-        if(entries[0].isIntersecting) {
-            document.body.classList.remove("sticky")
+        
+        if(entries[0].isIntersecting ) {
+            document.body.classList.remove("sticky");
+            
         }
+        if(entries[0].boundingClientRect.width <= 500) {
+            console.log("i cannn");
+            document.body.classList.remove("sticky");
+        }
+        console.log(entries[0].boundingClientRect.width)
 
+     
         // document.body.classList.toggle("sticky" , !entries[0].isIntersecting)
 
 } , {
