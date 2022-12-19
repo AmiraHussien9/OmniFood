@@ -92,10 +92,16 @@ let sectionObserve = new IntersectionObserver(function(entries) {
 } , {
     root:null,
     threshold:0,
-    rootMargin:'-96px',
+    // rootMargin:'-96px',
 
 })
 
 
 
-sectionObserve.observe(homeSection)
+sectionObserve.observe(homeSection);
+
+
+
+
+
+

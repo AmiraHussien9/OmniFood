@@ -151,7 +151,7 @@
 @media(max-width:992px) {
    
     .main-nav {
-        background-color: #fff;
+        background-color: #ffffffbf ;
         width: 100%;
         height: 100vh;
         display: flex;
@@ -165,7 +165,13 @@
         transform: translateX(100%);
         pointer-events: none;
         visibility: hidden;
+        backdrop-filter: blur(10px) !important;
+       -webkit-backdrop-filter: blur(10px) !important;
+       -moz-backdrop-filter: blur(10px) !important;
+       -ms-backdrop-filter: blur(10px) !important;
     }
+
+
     .mobile-nav-btn {
         display: block !important;
     }
