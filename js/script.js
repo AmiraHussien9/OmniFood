@@ -54,3 +54,39 @@ allLinks.forEach(function(link){
 
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+// -------------------------------sticky navBar--------------------------------------
+// -----------------------------------------------------------------------------------
+
+
+let homeSection = document.querySelector(".main-hero");
+console.log(homeSection);
+
+let sectionObserve = new IntersectionObserver(function(entries) {
+    // console.log(entries[0])
+        // if(!entries[0].isIntersecting) {
+        //     document.body.classList.add("sticky")
+        // }
+        // if(entries[0].isIntersecting) {
+        //     document.body.classList.remove("sticky")
+        // }
+
+        document.body.classList.toggle("sticky" , !entries[0].isIntersecting)
+
+} , {
+    root:null,
+    threshold:1,
+
+})
+
+
+
+sectionObserve.observe(homeSection)
