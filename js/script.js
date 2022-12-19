@@ -80,10 +80,10 @@ let sectionObserve = new IntersectionObserver(function(entries) {
             document.body.classList.remove("sticky");
             
         }
-        if(entries[0].boundingClientRect.width <= 500) {
-            console.log("i cannn");
-            document.body.classList.remove("sticky");
-        }
+        // if(entries[0].boundingClientRect.width <= 500) {
+        //     console.log("i cannn");
+        //     document.body.classList.remove("sticky");
+        // }
         console.log(entries[0].boundingClientRect.width)
 
      
@@ -92,7 +92,7 @@ let sectionObserve = new IntersectionObserver(function(entries) {
 } , {
     root:null,
     threshold:0,
-    rootMargin:'-250px',
+    rootMargin:'-96px',
 
 })
 
