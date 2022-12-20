@@ -170,7 +170,7 @@
         transform: translateX(100%);
         pointer-events: none;
         visibility: hidden;
-        z-index: 9999999999;
+        z-index: 99999;
         backdrop-filter: blur(10px) !important;
        -webkit-backdrop-filter: blur(10px) !important;
        -moz-backdrop-filter: blur(10px) !important;
@@ -199,6 +199,8 @@
     .openNav .icon-mobile-nav[name="close"] {
         display: block;
         align-self: flex-start;
+        z-index: 9999999;
+        position: relative;
     }
 
     .openNav .icon-mobile-nav[name="menu"] {
