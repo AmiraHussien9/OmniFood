@@ -170,6 +170,7 @@
         transform: translateX(100%);
         pointer-events: none;
         visibility: hidden;
+        z-index: 9999999999;
         /* backdrop-filter: blur(10px) !important;
        -webkit-backdrop-filter: blur(10px) !important;
        -moz-backdrop-filter: blur(10px) !important;
