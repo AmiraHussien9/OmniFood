@@ -149,6 +149,11 @@
 
 
 @media(max-width:992px) {
+
+    .scroll-to-top {
+        left: 90%;
+       
+    }
    
     .main-nav {
         background-color: #ffffffbf ;
