@@ -5,7 +5,7 @@ The website represents information about food.<br/>
 The website is full-responsive.<br/>
 
 
-Deployed it using Vercel [here](https://vercel.com/dashboard)
+Deployed it using Vercel [here](https://omnifood-red.vercel.app/)
 
 ## Build with
 
